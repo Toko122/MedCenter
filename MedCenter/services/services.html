@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./../home/home.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+    <div class="rocket">
+        <a href="./../services/services.html">
+            <div
+                class="rounded-full bg-blue-500 cursor-pointer w-14 h-14 absolute bottom-4 left-6 fixed flex justify-center items-center">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+        </a>
+    </div>
+
+    <nav class="flex justify-center align-center w-full h-[104px] bg-[#F3F6F9] fixed z-[100] relative">
+
+        <div class="flex justify-around items-center w-full">
+
+            <div class="flex justify-center items-center h-full gap-12">
+
+                <div class="w-[100px] h-[100px] overflow-hidden flex justify-content-center align-items-center">
+                    <a href="../home/MedHome.html" class="w-[100px] h-[100px] overflow-hidden">
+                        <img src="./../assets/b44df84d-d100-4028-bf83-3b67da5b41d2.png"
+                            class="w-full h-full object-cover">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="">
+
+
+                <div id="burgerMenu" class="burgerMenu" onclick="changeMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div id="closeMenu" class="closeMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+                <aside id="aside"
+                    class="absolute right-0 w-[300px] h-[919px] bg-black top-0 pt-[80px] pl-[32px] pr-[32px] pb-[32px] shadow-[-2px 0 5px #0003] transform translate-x-full transition-all duration-300 ">
+                    <div class="flex flex-col gap-4 text-2xl text-white font-sans">
+                        <a href="../products/products.html"
+                            class="w-full hover:bg-[#212830] hover:text-red-400 py-4 transition duration-200 rounded-md p-2">Products</a>
+                        <hr class="text-[#303030]">
+                        <a href="../services/services.html"
+                            class="w-full hover:bg-[#212830] hover:text-red-400 py-4 transition duration-200 rounded-md p-2">Services
+                        </a>
+                        <hr class="text-[#303030]">
+                        <a href="../login/Login.html"
+                            class="w-full hover:bg-[#212830] hover:text-red-400 py-4 transition duration-200 rounded-md p-2">Log
+                            in</a>
+                        <hr class="text-[#303030]">
+                    </div>
+                </aside>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <section class="bg-[#F8FAFC] w-full">
+        <div class="w-full h-full flex items-center flex-col gap-y-20 py-18">
+
+            <div class="text-5xl text-black font-semibold -mt-12">Services</div>
+
+            <div class="grid grid-cols-4 gap-6">
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fa-solid fa-mobile-screen w-full h-full text-3xl flex justify-center items-center"></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Online Consultation</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fa-solid fa-house w-full h-full text-3xl flex justify-center items-center"></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Home Care</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fa-solid fa-dna w-full h-full text-3xl flex justify-center items-center"></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Vaccination Service</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fa-solid fa-film w-full h-full text-3xl flex justify-center items-center"></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Radiology Services</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fa-solid fa-brain w-full h-full text-3xl flex justify-center items-center"></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Mental Health</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fa-solid fa-vial w-full h-full text-3xl flex justify-center items-center"></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Lab Analysis</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fa-solid fa-dumbbell w-full h-full text-3xl flex justify-center items-center"></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Physical Therapy</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fa-solid fa-apple-whole w-full h-full text-3xl flex justify-center items-center"></i></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Nutrition Support</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fas fa-stethoscope w-full h-full text-3xl flex justify-center items-center"></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Chronic Care</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fas fa-baby w-full h-full text-3xl flex justify-center items-center"></i></div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Children's Health</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fa-solid fa-tooth w-full h-full text-3xl flex justify-center items-center"></i></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Dental Clinic</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+
+                <div
+                    class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
+                    <div class="flex flex-col gap-y-6 justify-center items-center">
+                        <div class=" flex justify-center items-center"><i
+                                class="fa-solid fa-heart w-full h-full text-3xl flex justify-center items-center"></i>
+                        </div>
+                        <div class="text-2xl text-[#2883D2] font-semibold">Heart Care</div>
+                        <div class="w-[300px] text-center text-[#8895A0]">Pellentesque egestas, neque sit amet convallis
+                            pulvinar, usce vulputate eleifend sapien. Cras non dolor [...]</div>
+                        <div class="text-[18px] cursor-pointer text-[#00BAFF] font-bold tracking-wide">Learn more</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script>
+
+        function changeMenu() {
+
+            const burgerMenu = document.getElementById("burgerMenu")
+
+            const spans = document.querySelectorAll("span")
+
+            burgerMenu.classList.toggle("closeMenu")
+
+            if (burgerMenu.classList.contains("closeMenu")) {
+                spans[0].style.transform = "rotate(45deg) translate(5px, 4px)";
+                spans[1].style.opacity = "0";
+                spans[2].style.transform = "rotate(-45deg) translate(12.5px, -12px)";
+            } else {
+                spans[0].style.transform = "rotate(0) translate(0, 0)";
+                spans[1].style.opacity = "1";
+                spans[2].style.transform = "rotate(0) translate(0, 0)";
+            }
+
+
+            const asideBar = document.getElementById("aside")
+            asideBar.classList.toggle("translate-x-full")
+        }
+
+    </script>
+</body>
+
+</html>

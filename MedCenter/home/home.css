@@ -1,0 +1,24 @@
+.burgerMenu{
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    padding: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.burgerMenu span{
+    background: #000;
+    width: 35px;
+    height: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+

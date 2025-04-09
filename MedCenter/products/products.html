@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../home/home.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="overflow-x-hidden">
+    <div class="rocket">
+        <a href="./products.html">
+            <div
+                class="rounded-full bg-blue-500 cursor-pointer w-14 h-14 absolute bottom-4 left-6 fixed flex justify-center items-center">
+                <i class="fa-solid fa-rocket"></i>
+            </div>
+        </a>
+    </div>
+
+    <nav class="flex justify-center align-center w-full h-[104px] bg-[#F3F6F9] fixed z-[100] relative">
+
+        <div class="flex justify-around items-center w-full">
+
+            <div class="flex justify-center items-center h-full gap-12">
+
+                <div class="w-[100px] h-[100px] overflow-hidden flex justify-content-center align-items-center">
+                    <a href="../home/MedHome.html" class="w-[100px] h-[100px] overflow-hidden">
+                        <img src="./../assets/b44df84d-d100-4028-bf83-3b67da5b41d2.png"
+                            class="w-full h-full object-cover">
+                    </a>
+                </div>
+
+
+            </div>
+
+
+
+
+
+            <div class="">
+
+
+                <div id="burgerMenu" class="burgerMenu" onclick="changeMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div id="closeMenu" class="closeMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+
+                <aside id="aside"
+                    class="absolute right-0 top-0 transform translate-x-full transition-all duration-300 bg-black w-[300px] h-[919px] pt-[80px] pr-[32px] pl-[32px] pb-[32px] shadow-[-2px 0 5px #0003]">
+                    <div class="flex flex-col gap-4 text-2xl text-white font-sans">
+                        <a href="../products/products.html"
+                            class="w-full hover:bg-[#212830] hover:text-red-400 py-4 transition duration-200">Products</a>
+                        <hr class="text-[#303030]">
+                        <a href="../services/services.html"
+                            class="w-full hover:bg-[#212830] hover:text-red-400 py-4 transition duration-200">Services
+                        </a>
+                        <hr class="text-[#303030]">
+                        <a href="../login/Login.html"
+                            class="w-full hover:bg-[#212830] hover:text-red-400 py-4 transition duration-200">Log in</a>
+                        <hr class="text-[#303030]">
+                    </div>
+                </aside>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <section class="w-full mt-8 py-12">
+
+        <div class="flex flex-col gap-y-12 justify-center items-center">
+            <div class="text-3xl font-semibold ml-18 w-[1624px]">თავის მოვლა</div>
+
+            <div
+                class="flex justify-center rounded-md items-center w-[1624px] h-[764px] py-2flex justify-start items-center bg-[rgb(227,109,185)]">
+
+                <div class="w-full h-full flex relative pt-[20px] pb-[20px] pr-[96px] pl-[288px]">
+
+                    <div class="w-[369px] h-full object-cover absolute top-0 left-0"><img src="./../assets/111_2.webp"
+                            class="w-full h-full object-cover">
+                    </div>
+
+                    <div class="relative  grid grid-cols-4 gap-x-18 gap-y-2 ml-18">
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg flex items-center flex-col cursor-pointer transform hover:-translate-y-2 transition-all duration-400">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/4424.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">დამატენიანებელი ზეთი/ელექსირი
+                                    4424-კოდალი</div>
+                                <div class="text-2xl text-[#231444] font-semibold">115.00₾</div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/lyskin_caudalie_vinocrush_longlasting_bronzer_p.jpg"
+                                        class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">პუდრი Vinocrush 4134 კოდალი -
+                                    Caudalie</div>
+                                <div class="text-2xl text-[#231444] font-semibold">105.00₾</div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/1_vinoperfect_foam_packshot_caudalie.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">ქაფი Vinopefect 100 მლ 4318
+                                    კოდალი - Caudalie
+                                </div>
+                                <div class="text-2xl text-[#231444] font-semibold">92.00₾</div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/7fa3de0e-fc42-4e43-a038-2f3154dbcd85.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">შრატი Super Panthenol 50 მლ 0354
+                                    მისშა - Missha</div>
+                                <div class="text-2xl text-[#231444] font-semibold">125.00₾</div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/5m.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">კრემი Time Revolution Retinol
+                                    6159 მისშა - Missha</div>
+                                <div class="text-2xl text-[#231444] font-semibold">125.00₾</div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/2m.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">ამპულა Time Revolution Retinol
+                                    6142 მისშა - Missha
+                                </div>
+                                <div class="text-2xl text-[#231444] font-semibold">120.00₾</div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/84045_3336-_1_.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">Teaology - თიოლოჯი Matcha
+                                    დამატენიანებელი კრემი 50 მლ 0445
+                                </div>
+                                <div class="text-2xl text-[#231444] font-semibold">104.00₾</div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/86761_3393_1.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">Catrice - კატრისი ტუჩსაცხი
+                                    Scandalous Matte 010 2103
+                                </div>
+                                <div class="text-2xl text-[#231444] font-semibold">15.70₾</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full bg-[#fff] overflow-x-hidden">
+        <div class="flex-col flex justify-start items-center gap-y-10 p-20 w-full">
+            <div class="text-2xl font-semibold w-full">
+                ფრანგული კოსმეტიკური ბრენდი Nuxe 30% ფასდაკლებით
+            </div>
+
+            <div class="w-full relative overflow-hidden">
+                <div id="sliderTrack" class="flex transition-all duration-500 ease-in-out w-full"
+                    style="transform: translateX(0); min-width: max-content; padding-right: 16px;">
+
+
+                    <div
+                        class="h-[380px] bg-white flex justify-center items-center rounded-md min-w-[330px] mx-2 shadow-lg cursor-pointer">
+
+                        <div class=" w-full h-full rounded-md flex flex-col gap-y-2 p-6">
+                            <div class="px-6 w-[308px] h-[301px] flex justify-center items-center"><img
+                                    src="./../assets/59089_2660_1.jpg" class="w-[197px] h-[247px]" alt=""></div>
+                            <div class="w-[300px] -mt-4 text-[#334690] font-semibold text-[14px]">Nuxe - ნუქსი ხელისა და
+                                ფრჩხილის კრემი reve de miel 50 მლ 0446
+                            </div>
+                            <div class="text-[#C6017F] font-semibold text-2xl">20.65₾ <del
+                                    class="font-normal text-[#7A829C]">29.50₾</del></div>
+                        </div>
+
+                    </div>
+
+                    <div
+                        class="shadow-lg cursor-pointer h-[380px] bg-white flex justify-center items-center rounded-md min-w-[330px] mx-2">
+
+                        <div class=" w-full h-full rounded-md flex flex-col gap-y-2 p-6">
+                            <div class="px-6 w-[308px] h-[301px] flex justify-center items-center"><img
+                                    src="./../assets/93932_2660.jpg" class="w-[197px] h-[247px]" alt=""></div>
+                            <div class="w-[300px] -mt-4 text-[#334690] font-semibold text-[14px]">Nuxe - ნუქსი ხელისა და
+                                ფრჩხილის კრემი reve de miel 50 მლ 0446
+                            </div>
+                            <div class="text-[#C6017F] font-semibold text-2xl">22.65₾ <del
+                                    class="font-normal text-[#7A829C]">49.50₾</del></div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="shadow-lg cursor-pointer h-[380px] bg-white flex justify-center items-center rounded-md min-w-[330px] mx-2">
+
+                        <div class=" w-full h-full rounded-md flex flex-col gap-y-2 p-6">
+                            <div class="px-6 w-[308px] h-[301px] flex justify-center items-center"><img
+                                    src="./../assets/94613_2660.jpg" class="w-[197px] h-[247px]" alt=""></div>
+                            <div class="w-[300px] -mt-4 text-[#334690] font-semibold text-[14px]">Nuxe - ნუქსი ხელისა და
+                                ფრჩხილის კრემი reve de miel 50 მლ 0446
+                            </div>
+                            <div class="text-[#C6017F] font-semibold text-2xl">85.00₾ <del
+                                    class="font-normal text-[#7A829C]">120.00₾</del></div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="shadow-lg cursor-pointer h-[380px] bg-white flex justify-center items-center rounded-md min-w-[330px] mx-2">
+
+                        <div class=" w-full h-full rounded-md flex flex-col gap-y-2 p-6">
+                            <div class="px-6 w-[308px] h-[301px] flex justify-center items-center"><img
+                                    src="./../assets/94612_2660.jpg" class="w-[197px] h-[247px]" alt=""></div>
+                            <div class="w-[300px] -mt-4 text-[#334690] font-semibold text-[14px]">Nuxe - ნუქსი ხელისა და
+                                ფრჩხილის კრემი reve de miel 50 მლ 0446
+                            </div>
+                            <div class="text-[#C6017F] font-semibold text-2xl">100.65₾ <del
+                                    class="font-normal text-[#7A829C]">149.50₾</del></div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="shadow-lg cursor-pointer h-[380px] bg-white flex justify-center items-center rounded-md min-w-[330px] mx-2">
+
+                        <div class=" w-full h-full rounded-md flex flex-col gap-y-2 p-6">
+                            <div class="px-6 w-[308px] h-[301px] flex justify-center items-center"><img
+                                    src="./../assets/66762.jpg" class="w-[197px] h-[247px]" alt=""></div>
+                            <div class="w-[300px] -mt-4 text-[#334690] font-semibold text-[14px]">Nuxe - ნუქსი ხელისა და
+                                ფრჩხილის კრემი reve de miel 50 მლ 0446
+                            </div>
+                            <div class="text-[#C6017F] font-semibold text-2xl">15.65₾ <del
+                                    class="font-normal text-[#7A829C]">25.50₾</del></div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="shadow-lg cursor-pointer h-[380px] bg-white flex justify-center items-center rounded-md min-w-[330px] mx-2">
+
+                        <div class=" w-full h-full rounded-md flex flex-col gap-y-2 p-6">
+                            <div class="px-6 w-[308px] h-[301px] flex justify-center items-center"><img
+                                    src="./../assets/82624_2660.jpg" class="w-[197px] h-[247px]" alt=""></div>
+                            <div class="w-[300px] -mt-4 text-[#334690] font-semibold text-[14px]">Nuxe - ნუქსი ხელისა და
+                                ფრჩხილის კრემი reve de miel 50 მლ 0446
+                            </div>
+                            <div class="text-[#C6017F] font-semibold text-2xl">200.65₾ <del
+                                    class="font-normal text-[#7A829C]">169.50₾</del></div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="shadow-lg cursor-pointer h-[380px] bg-white flex justify-center items-center rounded-md min-w-[330px] mx-2">
+
+                        <div class=" w-full h-full rounded-md flex flex-col gap-y-2 p-6">
+                            <div class="px-6 w-[308px] h-[301px] flex justify-center items-center"><img
+                                    src="./../assets/59082_2660.jpg" class="w-[197px] h-[247px]" alt=""></div>
+                            <div class="w-[300px] -mt-4 text-[#334690] font-semibold text-[14px]">Nuxe - ნუქსი ხელისა და
+                                ფრჩხილის კრემი reve de miel 50 მლ 0446
+                            </div>
+                            <div class="text-[#C6017F] font-semibold text-2xl">55.15₾ <del
+                                    class="font-normal text-[#7A829C]">85.00₾</del></div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="shadow-lg cursor-pointer h-[380px] bg-white flex justify-center items-center rounded-md min-w-[330px] mx-2">
+
+                        <div class=" w-full h-full rounded-md flex flex-col gap-y-2 p-6">
+                            <div class="px-6 w-[308px] h-[301px] flex justify-center items-center"><img
+                                    src="./../assets/94617_2660.jpg" class="w-[197px] h-[247px]" alt=""></div>
+                            <div class="w-[300px] -mt-4 text-[#334690] font-semibold text-[14px]">Nuxe - ნუქსი ხელისა და
+                                ფრჩხილის კრემი reve de miel 50 მლ 0446
+                            </div>
+                            <div class="text-[#C6017F] font-semibold text-2xl">25.25₾ <del
+                                    class="font-normal text-[#7A829C]">45.70₾</del></div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="shadow-lg cursor-pointer h-[380px] bg-white flex justify-center items-center rounded-md min-w-[330px] mx-2">
+
+                        <div class=" w-full h-full rounded-md flex flex-col gap-y-2 p-6">
+                            <div class="px-6 w-[308px] h-[301px] flex justify-center items-center"><img
+                                    src="./../assets/73345_2660.jpg" class="w-[197px] h-[247px]" alt=""></div>
+                            <div class="w-[300px] -mt-4 text-[#334690] font-semibold text-[14px]">Nuxe - ნუქსი ხელისა და
+                                ფრჩხილის კრემი reve de miel 50 მლ 0446
+                            </div>
+                            <div class="text-[#C6017F] font-semibold text-2xl">66.00₾ <del
+                                    class="font-normal text-[#7A829C]">87.00₾</del></div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="shadow-lg cursor-pointer h-[380px] bg-white flex justify-center items-center rounded-md min-w-[330px] mx-2">
+
+                        <div class=" w-full h-full rounded-md flex flex-col gap-y-2 p-6">
+                            <div class="px-6 w-[308px] h-[301px] flex justify-center items-center"><img
+                                    src="./../assets/94616_2660.jpg" class="w-[197px] h-[247px]" alt=""></div>
+                            <div class="w-[300px] -mt-4 text-[#334690] font-semibold text-[14px]">Nuxe - ნუქსი ხელისა და
+                                ფრჩხილის კრემი reve de miel 50 მლ 0446
+                            </div>
+                            <div class="text-[#C6017F] font-semibold text-2xl">60.20₾ <del
+                                    class="font-normal text-[#7A829C]">90.20₾</del></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="flex">
+                    <div id="prev"
+                        class="absolute top-1/2 left-0 transform -translate-y-1/2 py-3 px-6 rounded-[5px] bg-[#F3F6F9] cursor-pointer hover:bg-[#ccc] transition-all duration-300 z-10">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div id="next"
+                        class="absolute top-1/2 right-0 transform -translate-y-1/2 py-3 px-6 rounded-[5px] bg-[#F3F6F9] cursor-pointer hover:bg-[#c2c2c2] transition-all duration-300 z-10">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-full mt-8 py-12">
+
+        <div class="flex flex-col gap-y-12 justify-center items-center">
+            <div class="text-3xl font-semibold ml-18 w-[1624px]">იზრუნე ოჯახზე</div>
+
+            <div
+                class="flex justify-center rounded-md items-center w-[1624px] h-[764px] py-2flex justify-start items-center bg-[#EEC146]">
+
+                <div class="w-full h-full flex relative pt-[20px] pb-[20px] pr-[96px] pl-[288px]">
+
+                    <div class="w-[297px] h-[466px] object-cover absolute bottom-0 left-0"><img
+                            src="./../assets/0000_1_.png" class="w-[297px] h-[466px] object-cover">
+                    </div>
+
+                    <div class="relative  grid grid-cols-4 gap-x-18 gap-y-2 ml-18">
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg flex items-center flex-col cursor-pointer transform hover:-translate-y-2 transition-all duration-400">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/7588.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">Molfix - მოლფიქსი ტრუსი 7-14კგ
+                                    52 ცალი 2711</div>
+                                <div class="text-2xl text-[#231444] font-semibold">35.00₾</div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/9713_.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">პუდრი Vinocrush 4134 კოდალი -
+                                    Caudalie</div>
+                                <div class="text-2xl text-[#231444] font-semibold">45.00₾</div>
+                            </div>
+
+                        </div>
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/8690536842728-k_.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">ქაფი Vinopefect 100 მლ 4318
+                                    კოდალი - Caudalie
+                                </div>
+                                <div class="text-2xl text-[#231444] font-semibold">31.00₾</div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/8006540069387.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">შრატი Super Panthenol 50 მლ 0354
+                                    მისშა - Missha</div>
+                                <div class="text-2xl text-[#231444] font-semibold">59.00₾</div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/__5823_1.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">კრემი Time Revolution Retinol
+                                    6159 მისშა - Missha</div>
+                                <div class="text-2xl text-[#231444] font-semibold">12.00₾</div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/__5816.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">ამპულა Time Revolution Retinol
+                                    6142 მისშა - Missha
+                                </div>
+                                <div class="text-2xl text-[#231444] font-semibold">20.00₾</div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/__6394.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">Teaology - თიოლოჯი Matcha
+                                    დამატენიანებელი კრემი 50 მლ 0445
+                                </div>
+                                <div class="text-2xl text-[#231444] font-semibold">54.00₾</div>
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            class="w-[290px] h-[348px] bg-white rounded-lg transform hover:-translate-y-2 transition-all duration-400 flex items-center flex-col cursor-pointer">
+
+                            <div class=" flex flex-col justify-center gap-y-4 ">
+                                <div class="w-full h-full px-[24px] flex items-center justify-center">
+                                    <img src="./../assets/__6998.jpg" class="w-[197px] ">
+                                </div>
+                                <div class="text-[#3A4C94] text-[14px] w-[270px] -mt-8">Catrice - კატრისი ტუჩსაცხი
+                                    Scandalous Matte 010 2103
+                                </div>
+                                <div class="text-2xl text-[#231444] font-semibold">25.70₾</div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        const imageContainer = document.getElementById("sliderTrack");
+        const prev = document.getElementById("prev");
+        const next = document.getElementById("next");
+
+        let currentImage = 0;
+        const visible = 6;
+
+        function update() {
+            const width = imageContainer.children[0].offsetWidth + 40;
+            imageContainer.style.transform = `translateX(-${currentImage * width}px)`;
+            imageContainer.style.transition = "transform 0.5s ease-in-out";
+        }
+
+        function checkSliderLimits() {
+            const total = imageContainer.children.length;
+            const width = imageContainer.children[0].offsetWidth + 16;
+            const containerWidth = imageContainer.offsetWidth;
+
+
+            if (total <= visible) {
+                next.style.pointerEvents = "none";
+                prev.style.pointerEvents = "none";
+            } else {
+                next.style.pointerEvents = "auto";
+                prev.style.pointerEvents = "auto";
+            }
+
+
+            const maxTranslateX = (total - visible) * width;
+            if (currentImage * width > maxTranslateX) {
+                currentImage = Math.floor(maxTranslateX / width);
+                update();
+            }
+        }
+
+        function goToNext() {
+            const total = imageContainer.children.length + 1;
+            const width = imageContainer.children[0].offsetWidth + 16;
+
+
+            if (currentImage < total - visible) {
+                currentImage++;
+                update();
+            }
+        }
+
+        function goToPrev() {
+
+            if (currentImage > 0) {
+                currentImage--;
+                update();
+            }
+        }
+
+        prev.addEventListener("click", goToPrev);
+        next.addEventListener("click", goToNext);
+
+
+        checkSliderLimits();
+
+
+
+        function changeMenu() {
+
+            const burgerMenu = document.getElementById("burgerMenu")
+            const spans = document.querySelectorAll("span")
+
+            burgerMenu.classList.toggle("closeMenu")
+
+            if (burgerMenu.classList.contains("closeMenu")) {
+
+                spans[0].style.transform = "rotate(45deg) translate(5px, 4px)"
+                spans[1].style.opacity = "0"
+                spans[2].style.transform = "rotate(-45deg) translate(12.5px, -12px)"
+
+            } else {
+                spans[0].style.transform = "rotate(0) translate(0, 0)";
+                spans[1].style.opacity = "1";
+                spans[2].style.transform = "rotate(0) translate(0, 0)";
+            }
+
+            const asideBar = document.getElementById("aside")
+
+            asideBar.classList.toggle("translate-x-full")
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
