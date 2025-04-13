@@ -90,7 +90,7 @@
 
             <div class="text-5xl text-black font-semibold -mt-12">Services</div>
 
-            <div class="grid grid-cols-4 gap-6">
+            <div class="grid grid-cols-4 gap-8">
 
                 <div
                     class="h-[170px] bg-[#D9EAFD] flex justify-center items-center flex-col gap-4 p-10 py-[130px] rounded-[30px]">
@@ -253,12 +253,91 @@
     </section>
 
 
+    <footer class="bg-[#F3F6F9] w-full">
 
+        <div class="flex justify-center items-center py-[130px] px-10 gap-[100px]">
+
+            <div id="leftSlide"
+                class="flex flex-col gap-y-6 transform translate-x-[-400px] opacity-0 transition-all duration-2000">
+                <input type="text" placeholder="Enter Your Name"
+                    class="border-b-2 border-black py-2 px-2 w-[350px] outline-none">
+                <input type="email" placeholder="Enter valid email address" required
+                    class="border-b-2 outline-none border-black py-2 px-2 w-[350px]">
+                <textarea class="border-b-2 outline-none border-black py-2 px-2 w-[350px]"></textarea>
+                <div
+                    class="bg-[#5FA2DF] py-2 px-4 flex justify-center items-center rounded-[50px] text-white text-[18px] font-semibold tracking-wider hover:bg-[#2B7FFF] cursor-pointer transition-all duration-300">
+                    Submit</div>
+            </div>
+
+
+
+            <div id="rightSlide"
+                class="flex flex-col justify-center items-center gap-14 -mt-8 transform translate-x-[400px] opacity-0 transition-all duration-2000">
+
+                <div class="flex flex-col justify-center items-center gap-4">
+                    <div class="text-5xl font-semibold tracking-wide">Contact Us</div>
+
+                    <div class="flex gap-4 text-3xl">
+                        <a href="#" class="cursor-pointer"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="cursor-pointer"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="cursor-pointer"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+
+                </div>
+
+                <div class="flex flex-col gap-4 text-3xl">
+                    <div class="">1 (234) 567-891</div>
+                    <div class="">1 (234) 987-654</div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
 
 
 
 
     <script>
+
+
+        window.addEventListener("scroll", () => {
+            const leftSlide = document.getElementById("leftSlide")
+            const leftSlideViewPort = leftSlide.getBoundingClientRect()
+
+            const isLeftSlide = leftSlideViewPort.top < window.innerHeight && leftSlideViewPort.bottom > 0
+
+            if (isLeftSlide) {
+                leftSlide.classList.remove("opacity-0", "translate-x-[-400px]")
+                leftSlide.classList.add("opacity-100", "translate-x-0")
+            } else {
+                leftSlide.classList.remove("opacity-0", "translate-x-0")
+                leftSlide.classList.add("opacity-100", "translate-x-[-400px]")
+            }
+        })
+
+
+        window.addEventListener("scroll", () => {
+            const rightSlide = document.getElementById("rightSlide")
+            const rightSlideViewPort = rightSlide.getBoundingClientRect()
+
+            const isRightSlide = rightSlideViewPort.top < window.innerHeight && rightSlideViewPort.bottom > 0
+
+            if (isRightSlide) {
+                rightSlide.classList.remove("opacity-0", "translate-x-[400px]")
+                rightSlide.classList.add("opacity-100", "translate-x-0")
+            } else {
+                rightSlide.classList.remove("opacity-0", "translate-x-0")
+                rightSlide.classList.add("opacity-100", "translate-x-[400px]")
+            }
+        })
+
+
+
+
+
 
         function changeMenu() {
 
